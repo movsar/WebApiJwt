@@ -1,6 +1,9 @@
-﻿using System;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace WebApiJwt.Entities
 {
@@ -10,13 +13,13 @@ namespace WebApiJwt.Entities
         {
             optionsBuilder.UseMySql(GetConnectionString());
         }
-        
+
         private static string GetConnectionString()
         {
             const string databaseName = "webapijwt";
             const string databaseUser = "root";
-            const string databasePass = "1";
-            
+            const string databasePass = "root";
+
             return $"Server=localhost;" +
                    $"database={databaseName};" +
                    $"uid={databaseUser};" +
