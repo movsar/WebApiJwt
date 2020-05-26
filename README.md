@@ -1,4 +1,5 @@
-A wonderful example of jwt authentication using ASP.NET Core and MySQL by @lugrugzo. 
+A good example of jwt authentication using ASP.NET Core and MySQL by @lugrugzo. 
+
 Upgraded by me to support .Net Core 3.1
 
 # WebApiJwt
